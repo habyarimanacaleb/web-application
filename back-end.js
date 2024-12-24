@@ -1,5 +1,7 @@
 
 // post data in back-end server
+const back_end_uri = "https://web-app-back-end.onrender.com"
+
 document.getElementById('applicationForm').addEventListener('submit', async function (event) {
     event.preventDefault();
 
@@ -17,7 +19,7 @@ document.getElementById('applicationForm').addEventListener('submit', async func
     };
    
     try {
-        const response = await fetch('http://localhost:3300/apply', {
+        const response = await fetch(`${back_end_uri}/apply`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
