@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Application Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+        <a href="./index.html">
+            <img src="./images/My-Logo.jpg" alt="Logo" class="w-32 h-auto mx-auto sm:w-48 sm:h-auto">
+        </a>
+
+  <!-- Bottom Navigation (for small screens only) -->
+  <nav class="fixed bottom-0 w-full bg-gray-900 text-white flex justify-around py-2 lg:hidden">
+    <a href="./index.html" class="text-center">
+      <i class="fas fa-home"></i>
+      <p class="text-sm">Home</p>
+    </a>
+    <a href="#about" class="text-center">
+      <i class="fas fa-info-circle"></i>
+      <p class="text-sm">About</p>
+    </a>
+    <a href="#apply" class="text-center">
+      <i class="fas fa-clipboard-list"></i>
+      <p class="text-sm">Apply</p>
+    </a>
+    <a href="#contact" class="text-center">
+      <i class="fas fa-envelope"></i>
+      <p class="text-sm">Contact</p>
+    </a>
+  </nav>
+    <div class="container mx-auto p-6">
+      <h1 class="text-3xl font-bold text-center mb-6">
+        University Application Form
+      </h1>
+      <p class="text-center">Fill out this form with correct information so that we can assist you in applying to the university of your choice.</p>
+      <form id="applicationForm" class="bg-white p-6 rounded-lg shadow-md">
+        <!-- Full Name -->
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold"
+            >Full Name:</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold"
+            >Email Address:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          />
+        </div>
+
+        <!-- Phone Number -->
+        <div class="mb-4">
+          <label for="phone" class="block text-gray-700 font-bold"
+            >Phone Number:</label
+          >
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          />
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="mb-4">
+          <label for="dob" class="block text-gray-700 font-bold"
+            >Date of Birth:</label
+          >
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          />
+        </div>
+
+        <!-- Gender -->
+        <div class="mb-4">
+          <label for="gender" class="block text-gray-700 font-bold"
+            >Gender:</label
+          >
+          <div class="flex space-x-4">
+            <label>
+              <input
+                type="radio"
+                id="genderMale"
+                name="gender"
+                value="Male"
+                required
+              />
+              Male
+            </label>
+            <label>
+              <input
+                type="radio"
+                id="genderFemale"
+                name="gender"
+                value="Female"
+                required
+              />
+              Female
+            </label>
+            <label>
+              <input
+                type="radio"
+                id="genderOther"
+                name="gender"
+                value="Other"
+                required
+              />
+              Other
+            </label>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-4">
+          <label for="address" class="block text-gray-700 font-bold"
+            >Address:</label
+          >
+          <input
+            type="text"
+            id="address"
+            name="address"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          />
+        </div>
+
+        <!-- High School Name -->
+        <div class="mb-4">
+          <label for="highSchool" class="block text-gray-700 font-bold"
+            >High School Name:</label
+          >
+          <input
+            type="text"
+            id="highSchool"
+            name="highSchool"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          />
+        </div>
+
+        <!-- High School Grades -->
+        <div class="mb-4">
+          <label for="grades" class="block text-gray-700 font-bold"
+            >High School Grades (Percentage):</label
+          >
+          <input
+            type="number"
+            id="grades"
+            name="grades"
+            min="0"
+            max="100"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          />
+        </div>
+
+        <!-- Preferred Course -->
+        <div class="mb-4">
+          <label for="course" class="block text-gray-700 font-bold"
+            >Preferred Course:</label
+          >
+          <select
+            id="course"
+            name="course"
+            class="w-full border border-gray-300 p-2 rounded"
+            required
+          >
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Business Administration">
+              Business Administration
+            </option>
+            <option value="Medicine">Medicine</option>
+          </select>
+        </div>
+
+        <!-- Why do you want to join? -->
+        <div class="mb-6">
+          <label for="message" class="block text-gray-700 font-bold"
+            >Why do you want to join?</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="w-full border border-gray-300 p-2 rounded"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+   <!-- Footer -->
+   <footer class="bg-gray-800 text-white mt-8">
+    <div class="w-full h-12 bg-blue-500 transform -skew-y-3 -mt-2"></div>
+    <div class="container mx-auto px-4 py-6">
+      <p class="text-center">© 2024 University Application. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="./back-end.js"></script>
+  </body>
+</html>
