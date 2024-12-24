@@ -16,8 +16,18 @@
   </head>
   <body class="bg-gray-100">
     <!-- Header -->
-        <a href="./index.html">
-          <img src="./images/My-Logo.jpg" alt="Logo" class="w-8 h-auto ml-4 mt-2 sm:w-24 sm:h-auto rounded-full">        </a>
+        
+
+        <header
+      class="hidden lg:flex justify-around items-center p-4 bg-blue-600 text-white"
+    >
+    <a href="./index.html">
+      <img src="./images/My-Logo.jpg" alt="Logo" class="w-8 h-auto ml-4 mt-2 sm:w-24 sm:h-auto rounded-full">
+    </a>    <nav  class="flex space-x-4 justify-center items-center">
+        <a href="#products" class="px-4 hover:text-white-700">Products</a>
+        <a href="./app.html" class="apply-btn rounded-md px-4 py-2 hover:bg-blue-500" style="border: 1px solid black;">Apply</a>
+      </nav>
+    </header>
 
   <!-- Bottom Navigation (for small screens only) -->
   <nav class="fixed bottom-0 w-full bg-gray-900 text-white flex justify-around py-2 lg:hidden">
