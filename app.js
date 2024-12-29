@@ -58,6 +58,7 @@ const productsContainer = document.querySelector("#products .grid");
 products.forEach((product) => {
   const productCard = document.createElement("div");
   productCard.classList.add(
+    "card",
     "bg-white",
     "rounded",
     "shadow",
