@@ -15,6 +15,23 @@ nav a{
     object-fit: cover;
     object-position: center;
   } 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out forwards; /* Increased duration and added easing */
+  }
+  
+  .fade-in-delay {
+    animation: fadeIn 2s ease-in-out forwards; /* Increased duration and added easing */
+    animation-delay: 1s; /* Adjust the delay as needed */
+  }
   @media screen and (max-width: 768px) {
    footer{
     display: none;
