@@ -12,47 +12,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100">
     <!-- Header -->
-        
 
-        <header
+    <header
       class="hidden lg:flex justify-around items-center p-4 bg-blue-600 text-white"
     >
-    <a href="./index.html">
-      <img src="./images/My-Logo.jpg" alt="Logo" class="w-8 h-auto ml-4 mt-2 sm:w-24 sm:h-auto rounded-full">
-    </a>    <nav  class="flex space-x-4 justify-center items-center">
+      <a href="./index.html">
+        <img
+          src="./images/My-Logo.jpg"
+          alt="Logo"
+          class="w-8 h-auto ml-4 mt-2 sm:w-24 sm:h-auto rounded-full"
+        />
+      </a>
+      <nav class="flex space-x-4 justify-center items-center">
         <a href="#products" class="px-4 hover:text-white-700">Products</a>
-        <a href="./app.html" class="apply-btn rounded-md px-4 py-2 hover:bg-blue-500" style="border: 1px solid black;">Apply</a>
+        <a
+          href="./app.html"
+          class="apply-btn rounded-md px-4 py-2 hover:bg-blue-500"
+          style="border: 1px solid black"
+          >Apply</a
+        >
       </nav>
     </header>
 
-  <!-- Bottom Navigation (for small screens only) -->
-  <nav class="fixed bottom-0 w-full bg-gray-900 text-white flex justify-around py-2 lg:hidden">
-    <a href="./index.html" class="text-center">
-      <i class="fas fa-home"></i>
-      <p class="text-sm">Home</p>
-    </a>
-    <a href="./pages/about.html" class="text-center">
-      <i class="fas fa-info-circle"></i>
-      <p class="text-sm">About</p>
-    </a>
-    <a href="#" class="text-center">
-      <i class="fas fa-clipboard-list"></i>
-      <p class="text-sm">Apply</p>
-    </a>
-    <a href="./pages/contact-us.html" class="text-center">
-      <i class="fas fa-envelope"></i>
-      <p class="text-sm">Contact</p>
-    </a>
-  </nav>
+    <!-- Bottom Navigation (for small screens only) -->
+    <nav
+      class="fixed bottom-0 w-full bg-gray-900 text-white flex justify-around py-2 lg:hidden"
+    >
+      <a href="./index.html" class="text-center">
+        <i class="fas fa-home"></i>
+        <p class="text-sm">Home</p>
+      </a>
+      <a href="./pages/about.html" class="text-center">
+        <i class="fas fa-info-circle"></i>
+        <p class="text-sm">About</p>
+      </a>
+      <a href="#" class="text-center">
+        <i class="fas fa-clipboard-list"></i>
+        <p class="text-sm">Apply</p>
+      </a>
+      <a href="./pages/contact-us.html" class="text-center">
+        <i class="fas fa-envelope"></i>
+        <p class="text-sm">Contact</p>
+      </a>
+    </nav>
     <div class="container mx-auto p-6">
       <h1 class="text-3xl font-bold text-center mb-6">
         University Application Form
       </h1>
-      <p class="text-center">Fill out this form with correct information so that we can assist you in applying to the university of your choice.</p>
+      <p class="text-center">
+        Fill out this form with correct information so that we can assist you in
+        applying to the university of your choice.
+      </p>
       <form id="applicationForm" class="bg-white p-6 rounded-lg shadow-md mb-6">
         <!-- Full Name -->
         <div class="mb-4">
@@ -235,18 +253,26 @@
         </button>
       </form>
     </div>
-   <!-- Footer -->
-   <footer class="bg-gray-800 text-white mt-8">
-    <div class="w-full h-12 bg-blue-500 transform -skew-y-3 -mt-2"></div>
-    <div class="container mx-auto px-4 py-6">
-      <p class="text-center">© 2024 University Application. All rights reserved.</p>
-      <div class="flex justify-center space-x-4 mt-4">
-        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i> Facebook</a>
-        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-8">
+      <div class="w-full h-12 bg-blue-500 transform -skew-y-3 -mt-2"></div>
+      <div class="container mx-auto px-4 py-6">
+        <p class="text-center">
+          © 2024 University Application. All rights reserved.
+        </p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="hover:text-blue-400"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+          <a href="#" class="hover:text-blue-400"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+          <a href="#" class="hover:text-blue-400"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
-  <script type="text/javascript" src="./back-end.js"></script>
+    </footer>
+    <script type="text/javascript" src="./back-end.js"></script>
   </body>
 </html>
