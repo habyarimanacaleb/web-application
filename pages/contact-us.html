@@ -44,6 +44,7 @@
         if (response.ok) {
           alert('Message sent successfully!');
           document.getElementById('contactForm').reset();
+          window.location.href = '../index.html';
         } else {
           alert('Failed to send message');
         }
