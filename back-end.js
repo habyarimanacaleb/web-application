@@ -1,6 +1,7 @@
 
 // post data in back-end server
 const back_end_uri = "https://web-app-back-end.onrender.com"
+const getAllApplications ="https://web-app-back-end.onrender.com/api/applications"
 
 
 document.getElementById('applicationForm').addEventListener('submit', async function (event) {
