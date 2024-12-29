@@ -19,7 +19,7 @@ document.getElementById('applicationForm').addEventListener('submit', async func
     };
    
     try {
-        const response = await fetch(`${back_end_uri}/apply`, {
+        const response = await fetch('https://web-app-back-end.onrender.com/apply', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
