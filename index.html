@@ -25,8 +25,7 @@
         <a href="./app.html" class="apply-btn rounded-md px-4 py-2 hover:bg-blue-500" style="border: 1px solid black;">Apply</a>
       </nav>
     </header>
-    <!-- Navigation for small screens -->
-    <nav
+    <!-- <nav
       class="lg:hidden  fixed bottom-0 left-0 w-full bg-blue-600 text-white flex justify-around py-2"
     >
       <a href="#products" class="text-center flex flex-col items-center">
@@ -37,8 +36,28 @@
         <span class="material-icons">create</span>
         Apply
       </a>
-    </nav>
-
+    </nav> -->
+ <!-- Bottom Navigation (for small screens only) -->
+ <nav
+ class="fixed bottom-0 w-full bg-gray-900 text-white flex justify-around py-2 lg:hidden"
+>
+ <a href="./index.html" class="text-center">
+   <i class="fas fa-home"></i>
+   <p class="text-sm">Home</p>
+ </a>
+ <a href="./pages/about.html" class="text-center">
+   <i class="fas fa-info-circle"></i>
+   <p class="text-sm">About</p>
+ </a>
+ <a href="#" class="text-center">
+   <i class="fas fa-clipboard-list"></i>
+   <p class="text-sm">Apply</p>
+ </a>
+ <a href="./pages/contact-us.html" class="text-center">
+   <i class="fas fa-envelope"></i>
+   <p class="text-sm">Contact</p>
+ </a>
+</nav>
     <!-- Products Section -->
     <section id="products" class="container mx-auto py-8">
       <h2 class="text-4xl font-bold text-center mb-6">Our Services</h2>

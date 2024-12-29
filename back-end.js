@@ -2,6 +2,7 @@
 // post data in back-end server
 const back_end_uri = "https://web-app-back-end.onrender.com"
 
+
 document.getElementById('applicationForm').addEventListener('submit', async function (event) {
     event.preventDefault();
 
@@ -32,6 +33,7 @@ document.getElementById('applicationForm').addEventListener('submit', async func
           document.getElementById('applicationForm').reset();
         } else {
           alert('Failed to submit application');
+          document.getElementById('applicationForm').reset();
         }
       } catch (error) {
         console.error('Error:', error);
